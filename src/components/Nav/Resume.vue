@@ -1,18 +1,18 @@
 <template>
     <li class="nav-item">
-        <UtilsDropDown
+        <DropdownToggler
             :links="links"
         >
             <template #button>
                 <NavResumeLink />
             </template>        
-        </UtilsDropDown>
+        </DropdownToggler>
     </li>
 </template>
 
 <script>
 export default {
-    name: 'UtilsResume',
+    name: 'NavResume',
     computed: {
         links() {
             return [

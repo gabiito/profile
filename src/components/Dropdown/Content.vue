@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'DropDownContent',
+    name: 'DropdownContent',
     props: {
         asset: {
             type: String,
@@ -46,7 +46,7 @@ export default {
     color: var(--primary-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .download-link {
         text-align: center;
         padding: 10px;

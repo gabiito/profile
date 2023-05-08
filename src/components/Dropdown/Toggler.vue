@@ -4,7 +4,7 @@
             <slot name="button"></slot>
         </button>
         <div class="dropdown-content" v-if="showDropdown">
-            <UtilsDropdDownContent v-for="(link, index) in links"
+            <DropdownContent v-for="(link, index) in links"
                 :key="index"
                 :asset="link.asset"
                 :text="link.text"
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    name: 'UtilsDropDown',
+    name: 'DropdownToggler',
     props: {
         links: {
             type: Array,
@@ -100,7 +100,7 @@ export default {
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .dropdown-content {
         right: 0;
