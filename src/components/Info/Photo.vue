@@ -34,7 +34,7 @@ img {
     object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
     .profile-photo {
         width: fit-content;

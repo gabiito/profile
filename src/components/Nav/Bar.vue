@@ -85,7 +85,6 @@ export default {
 
 <style scoped>
 nav {
-    min-height: 55px;
     width: 100%;
     padding: 20px 40px;
     position: fixed;
@@ -130,7 +129,11 @@ nav.scrolling {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    nav {
+        min-height: 55px
+
+    }
     nav:not(.toggled) .nav-bar {
         height: 0;
         overflow: hidden;
@@ -175,7 +178,6 @@ nav.scrolling {
     .nav-item {
         transition: all 0.3s .1s ease-in-out;
     }
-
 
     .mobile-toggle {
         display: block;

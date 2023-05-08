@@ -66,4 +66,23 @@ defineProps({
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .nav-item {
+        padding: 0;
+    }
+    .link {
+        display: block;
+        width: 100%;
+        padding: 10px
+    }
+
+    .link.router-link-active::before {
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    .link-bottom {
+        display: none;
+    }
+}
+
 </style>

@@ -91,7 +91,7 @@ color: var(--primary-color);
     left: 120%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .side-links {
         display: none;
     }    

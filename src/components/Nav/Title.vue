@@ -24,11 +24,18 @@ export default {
 
 <style scoped>
 .nav-bar-title {
+    display: none;
     opacity: 0;
 }
 
-.nav-bar-title.show {
-    transition: opacity .3s ease-in-out;
-    opacity: 1;
+@media screen and (max-width: 1024px) {
+    .nav-bar-title {
+        display: block;
+    }
+    .nav-bar-title.show {
+        transition: opacity .3s ease-in-out;
+        opacity: 1;
+    }
+    
 }
 </style>

@@ -48,7 +48,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .resume {
         border-color: var(--primary-color);
         justify-content: center;

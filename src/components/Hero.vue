@@ -70,7 +70,7 @@ h3 {
     max-width: min(100%, 800px);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     h1, h3 {
         font-size: 2rem;
     }
