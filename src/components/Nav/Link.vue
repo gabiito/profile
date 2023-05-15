@@ -34,6 +34,10 @@ defineProps({
     cursor: pointer;
 }
 
+.link::after {
+    content: none;
+}
+
 .link-bottom {
     position: absolute;
     bottom: -4px;
