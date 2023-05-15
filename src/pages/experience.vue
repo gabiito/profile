@@ -54,9 +54,9 @@ const data = [
     },
     {
         title: 'Technical Tutor',
-        company: 'Facebook',
-        companyLink: 'https://facebook.com',
-        date: '2017 - 2019',
+        company: 'Ceibal - JAP',
+        companyLink: 'https://jovenesaprogramar.edu.uy/',
+        date: '2022',
         task: [
             'Introduce new topics to the students and help them understand the concepts.',
             'Follow up on the students progress. Help them with their issues and provide feedback of their progress throughout the course.',
