@@ -1,49 +1,44 @@
 <template>
-    <ul class="side-links">
-        <li class="side-item">
-            <a  href="https://github.com/gabiito" 
-                class="link"
-                target="_blank">
-                <IconsGitHub />
-            </a>
-            <div class="link-name">GitHub</div>
-        </li>
-        <li class="side-item">
-            <a  href="https://linkedin.com/gzerbino" 
-                class="link"
-                target="_blank">
-                <IconsLinkedIn />
-            </a>
-            <div class="link-name">LinkedIn</div>
-        </li>
-        <li class="side-item">
-            <a  href="mailto:gabozerbino@gmail.com" 
-                class="link"
-                target="_blank">
-                <IconsEmail />
-            </a>
-            <div class="link-name">E-mail</div>
-        </li>
-
-    </ul>
+    <div class="side-links-wrapper">
+        <ul class="side-links">
+            <li class="side-item">
+                <a  href="https://github.com/gabiito" 
+                    class="link"
+                    target="_blank">
+                    <IconsGitHub />
+                </a>
+                <div class="link-name">GitHub</div>
+            </li>
+            <li class="side-item">
+                <a  href="https://www.linkedin.com/in/gzerbino/" 
+                    class="link"
+                    target="_blank">
+                    <IconsLinkedIn />
+                </a>
+                <div class="link-name">LinkedIn</div>
+            </li>
+            <li class="side-item">
+                <a  href="mailto:gabozerbino@gmail.com" 
+                    class="link"
+                    target="_blank">
+                    <IconsEmail />
+                </a>
+                <div class="link-name">E-mail</div>
+            </li>
+    
+        </ul>
+    </div>
 </template>
 
 <style scoped>
-
-.side-links {
+.side-links-wrapper {
     position: fixed;
     bottom: 100px;
     left: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    list-style: none;
     z-index: 1;
 }
 
-.side-links::after {
+.side-links-wrapper::after {
     content: "";
     position: absolute;
     top: 120%;
@@ -51,6 +46,15 @@
     height: 100px;
     width: 1px;
     background-color: var(--text-color);
+}
+
+.side-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
 }
 
 .side-item {
@@ -92,7 +96,7 @@ color: var(--primary-color);
 }
 
 @media screen and (max-width: 1024px) {
-    .side-links {
+    .side-links-wrapper  {
         display: none;
     }    
 }
