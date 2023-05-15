@@ -31,6 +31,7 @@ useHead({
 
 :root {
   --background-color: #0a192f;
+  /* --background-color: #1b1a3c; */
   --accent-background-color: #2d3250;
   /* --background-color: #2d3250; */
   /* --background-color: #1b1c27; */
@@ -38,9 +39,12 @@ useHead({
   /* --background-color: #232836; */
 
   --accent-color: #8168aa;
+  --accent-color: #aa98d2;
   --primary-color: #64ffda;
   --primary-color: #f9b17a;
   --primary-color: #f1dac4;
+  --primary-color: #91bd7c;
+  --primary-color: #39d69f;
   --primary-color-dark: #14b8a6;
   --text-color: #676f9d;
   /* --text-color: #64748b; */
@@ -111,6 +115,23 @@ strong {
 a {
   color: var(--primary-color);
   text-decoration: none;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: var(--primary-color);
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: -1px;
+  transition: all 0.4s;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 li:not(.nav-item)::before {
@@ -123,18 +144,18 @@ li:not(.nav-item)::before {
   bottom: 2px;
 }
 
+* {
+  accent-color: var(--primary-color);
+}
 
-/* width */
 ::-webkit-scrollbar {
   width: 3px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--text-color);
 }
@@ -151,4 +172,6 @@ li:not(.nav-item)::before {
 ::selection {
   color: var(--background-color);
   background: var(--text-color-light);
-}</style>
+}
+
+</style>
