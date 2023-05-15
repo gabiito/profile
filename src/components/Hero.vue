@@ -28,7 +28,7 @@
 
 <style scoped>
 .hero-wrapper {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
