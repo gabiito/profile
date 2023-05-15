@@ -29,6 +29,7 @@
             <NavLink 
                 linkTo="/contact"
                 @click="toggled = false"
+                :style=" { 'display': toggled ? 'block' : 'none'}"
             >
                 Contact
             </NavLink>
