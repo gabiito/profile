@@ -170,6 +170,7 @@ function handleClick(index) {
     .tabs-wrapper {
         grid-template-columns: 1fr;
     }
+
     .tabs-titles {
         flex-direction: row;
         overflow-x: auto;
@@ -179,12 +180,15 @@ function handleClick(index) {
         scrollbar-width: none;
         -ms-overflow-style: none;
     }
+
     .tabs-titles::before {
         display: none;
     }
+
     .tabs-titles::-webkit-scrollbar {
-        display: none;
+        height: 4px;
     }
+
     .tab-slider {
         display: none;
     }
