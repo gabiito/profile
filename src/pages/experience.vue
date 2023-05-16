@@ -135,6 +135,7 @@ function handleClick(index) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1rem;
+    margin-top: 50px;
 }
 
 .tabs-titles {
@@ -142,7 +143,6 @@ function handleClick(index) {
     flex-direction: column;
     position: relative;
     height: max-content;
-    align-self: center;
 }
 
 .tabs-titles::before {
