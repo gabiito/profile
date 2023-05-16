@@ -7,7 +7,7 @@
                 <br>
                 I'm coursing the Systems Engineering career at the University of the Republic.
                 But also a self-taught developer, I've learned by researching,
-                reading documentations and more than just one or two online course.
+                reading documentations and more than just one or two online courses.
             </p>
             <p>
                 I've been working on web development for the last 3 years now, although I've been coding for more than 5
@@ -26,7 +26,7 @@
             </p>
             
             <p>
-                Here are some of the technolologies I've been working with:
+                Here are some of the technologies I've been working with:
             </p>
             <ul class="skills">
                 <li class="skill">PHP</li>
