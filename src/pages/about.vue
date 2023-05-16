@@ -59,7 +59,6 @@ useHead({
 
 <style scoped>
 #about {
-    margin-top: 100px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;

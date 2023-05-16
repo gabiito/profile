@@ -17,6 +17,7 @@
 main {
     padding: 0 20vw;
     margin-top: 80px;
+    flex-grow: 1;
 }
 
 @media screen and (max-width: 1024px) {
